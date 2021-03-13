@@ -51,7 +51,7 @@ def job():
 				    'Api-Key': 'f3ed6f01f93ecd9591cdaddf98649b14',
 				    'Content-Type': 'application/json',
 				}
-				data = '{"campaign_id":'+webid+',"type":"forced","name":"'+name+'","position":"1","action_options":"","comments":null,"state":"active","action_type":"http","schema":"landings","collect_clicks":true,"filter_or":false,"filters":[{"id":0,"name":"sub_id_2","mode":"accept","payload":["'+subid2+'"]},{"id":0,"name":"sub_id_3","mode":"accept","payload":["'+sub_id_3+'"]}],"triggers":null,"landings":[],"offers":[{"offer_id":'+offerid+',"share":100,"state":"active"}]}'
+				data = '{"campaign_id":'+webid+',"type":"forced","name":"'+name+'","position":"1","action_options":"","comments":null,"state":"active","action_type":"http","schema":"landings","collect_clicks":true,"filter_or":false,"filters":[{"id":0,"name":"sub_id_2","mode":"accept","payload":["'+i['filters'][1]['payload'][0]+'"]},{"id":0,"name":"sub_id_3","mode":"accept","payload":["'+sub_id_3+'"]}],"triggers":null,"landings":[],"offers":[{"offer_id":'+offerid+',"share":100,"state":"active"}]}'
 				response = requests.post('https://trackmeup.xyz/admin_api/v1/streams', headers=headers, data=data)
 				done_list.append(str(name.replace(' ', '')))	
 				print(name)	
