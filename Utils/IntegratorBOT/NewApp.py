@@ -1,8 +1,8 @@
 #################
-AppName = 'Galaxy Master'
-subid2 = 'app329galaxy'
+AppName = 'Dwarf Rich Road'
+subid2 = 'app334dwarf'
 # subid5 = 'trident'
 #################
-form = '-'
-compid = 378
-ringid = 303
+form = '_'
+compid = 383
+ringid = 222
