@@ -1,0 +1,9 @@
+python3: can't open file 'NewEra.py.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "NewEra.py", line 139, in <module>
+    time.sleep(1)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "NewEra.py", line 139, in <module>
+    time.sleep(1)
+KeyboardInterrupt
